@@ -2,7 +2,7 @@ package org.example.Models;
 
 public class Command {
 
-    private Commands root;
+    private Roots root;
     private String[] args;
     private int length;
 
@@ -14,14 +14,14 @@ public class Command {
 
         String[]strings = st.split(" ");
 
-        this.root = Commands.valueOf(strings[0]);
+        this.root = Roots.valueOf(strings[0]);
         this.length = strings.length-1;
 
         args = new String[strings.length-1];
         System.arraycopy(strings, 1, args, 0, strings.length - 1);
     }
 
-    public Commands getRoot() {
+    public Roots getRoot() {
         return root;
     }
 

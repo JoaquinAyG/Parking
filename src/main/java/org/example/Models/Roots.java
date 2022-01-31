@@ -1,6 +1,6 @@
 package org.example.Models;
 
-public enum Commands {
+public enum Roots {
 
     PARK,
     LEAVE,

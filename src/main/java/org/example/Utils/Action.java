@@ -2,7 +2,7 @@ package org.example.Utils;
 
 import org.example.Models.Car;
 import org.example.Models.Command;
-import org.example.Models.Commands;
+import org.example.Models.Roots;
 import org.example.Models.Parking;
 
 public class Action {
@@ -25,7 +25,7 @@ public class Action {
 
     public static void read(Command command){
 
-        Commands root = command.getRoot();
+        Roots root = command.getRoot();
         String[] args = command.getArgs();
 
         switch (root){
